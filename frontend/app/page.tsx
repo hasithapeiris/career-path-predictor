@@ -31,7 +31,7 @@ export default function Home() {
             <AnimateInView animation="fade-up" delay={400}>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Link
-                  href="#get-started"
+                  href="/quiz"
                   className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-6 py-3 text-base font-medium text-primary-foreground transition-transform hover:scale-105"
                 >
                   Take the Quiz

@@ -91,11 +91,11 @@ export default function CareerQuizPage() {
             </p>
           </div>
 
-          <CompletionIndicator
+          {/* <CompletionIndicator
             currentQuestion={currentQuestionIndex + 1}
             totalQuestions={totalQuestions}
             percentage={completionPercentage}
-          />
+          /> */}
 
           <div className="mt-8">
             <QuestionStepper

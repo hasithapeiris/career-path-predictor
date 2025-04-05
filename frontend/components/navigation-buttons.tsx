@@ -44,21 +44,22 @@ export default function NavigationButtons({
             onClick={onSubmit}
             disabled={!isCurrentQuestionAnswered || isSubmitting}
             className={`
-              px-6 py-2 rounded-md bg-primary text-primary-foreground transition-all duration-200
+              px-6 py-2 rounded-md bg-primary text-primary-foreground transition-all duration-200 cursor-pointer
               ${
                 !isCurrentQuestionAnswered || isSubmitting
                   ? "opacity-50 cursor-not-allowed"
                   : "hover:bg-primary/90"
               }
+              
             `}
           >
             {isSubmitting ? (
               <div className="flex items-center">
                 <LoadingSpinner />
-                <span className="ml-2">Submitting...</span>
+                <span className="ml-2">Predicting...</span>
               </div>
             ) : (
-              "Submit"
+              "Predict"
             )}
           </button>
         ) : (
@@ -66,12 +67,13 @@ export default function NavigationButtons({
             onClick={onNext}
             disabled={!isCurrentQuestionAnswered}
             className={`
-              px-6 py-2 rounded-md bg-primary text-primary-foreground transition-all duration-200
+              px-6 py-2 rounded-md bg-primary text-primary-foreground transition-all duration-200 cursor-pointer
               ${
                 !isCurrentQuestionAnswered
                   ? "opacity-50 cursor-not-allowed"
                   : "hover:bg-primary/90"
               }
+              
             `}
           >
             Next

@@ -30,7 +30,7 @@ export default function QuestionDisplay({
             key={option.value}
             onClick={() => onAnswer(question.variableName, option.value)}
             className={`
-              w-full text-left px-4 py-3 rounded-lg border transition-all duration-200
+              w-full text-left px-4 py-3 rounded-lg border transition-all duration-200 cursor-pointer
               ${
                 selectedAnswer === option.value
                   ? "border-primary bg-primary/10 text-foreground"
