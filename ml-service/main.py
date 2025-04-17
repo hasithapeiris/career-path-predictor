@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app) 
 
 # Load the trained model
-with open('models/prediction_model.pickle', 'rb') as model_file:
+with open('models/prediction_model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 # Define career labels
