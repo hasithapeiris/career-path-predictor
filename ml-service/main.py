@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app) 
 
 # Load the trained model
-with open('models/prediction_model.pkl', 'rb') as model_file:
+with open('models/random_forest_model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 # Define career labels
@@ -29,9 +29,6 @@ def predict_career():
 
         # Define the expected order of features
         expected_keys = [
-            "expertise_level",
-            "working_frequency",
-            "tech_news_frequency",
             "willingness_to_learn",
             "interest_visual_elements",
             "interest_user_behavior",
@@ -52,8 +49,8 @@ def predict_career():
         # Extract features in correct order
         features = [answers.get(key) for key in expected_keys]
 
-        if None in features or len(features) != 18:
-            return jsonify({"error": "Invalid or missing answers for all 18 features."}), 400
+        if None in features or len(features) != 15:
+            return jsonify({"error": "Invalid or missing answers for all 15 features."}), 400
 
         # Prepare data for prediction
         input_data = np.array(features).reshape(1, -1)

@@ -11,10 +11,9 @@ export async function submitQuizAnswers(
   answers: QuizAnswers
 ): Promise<ResultsData> {
   try {
-    // In a real application, this would be an actual API call
-    // For example:
     const response = await fetch(
-      "https://devpath-server.onrender.com/predict",
+      //"https://devpath-server.onrender.com/predict",
+      "http://127.0.0.1:5000/predict",
       {
         method: "POST",
         headers: {
