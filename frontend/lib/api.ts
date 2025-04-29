@@ -12,8 +12,8 @@ export async function submitQuizAnswers(
 ): Promise<ResultsData> {
   try {
     const response = await fetch(
-      //"https://devpath-server.onrender.com/predict",
-      "http://127.0.0.1:5000/predict",
+      "https://devpath-server.onrender.com/predict",
+      // "http://127.0.0.1:5000/predict",
       {
         method: "POST",
         headers: {

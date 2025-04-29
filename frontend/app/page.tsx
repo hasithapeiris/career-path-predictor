@@ -416,20 +416,20 @@ const accuracyPoints = [
 // Testimonials
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Frontend Developer at TechCorp",
+    name: "Hasitha Jagoda",
+    role: "Frontend Developer at Ceydigital",
     quote:
       "The career path predictor helped me realize my passion for frontend development. Two years later, I'm thriving in a role I love.",
   },
   {
-    name: "Michael Chen",
-    role: "DevOps Engineer at CloudScale",
+    name: "Shanika Perera",
+    role: "Data Scientist at NTB",
     quote:
       "I was stuck between several paths until DevPath showed me where my skills would be most valuable. Best career decision I've made.",
   },
   {
-    name: "Priya Sharma",
-    role: "Full Stack Developer at StartupX",
+    name: "Thanusha Elvitigala",
+    role: "Full Stack Developer at CEB",
     quote:
       "The assessment was spot-on! It identified my versatile skill set and recommended full stack development, which has been perfect for me.",
   },
@@ -445,7 +445,7 @@ const faqs = [
   {
     question: "How long does the assessment take?",
     answer:
-      "The assessment typically takes 10-15 minutes to complete. We've designed it to be thorough yet efficient.",
+      "The assessment typically takes 5-10 minutes to complete. We've designed it to be thorough yet efficient.",
   },
   {
     question: "Is my data kept private?",

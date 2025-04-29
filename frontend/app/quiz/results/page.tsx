@@ -4,15 +4,24 @@ import type React from "react";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";
 import type { ResultsData } from "@/lib/api";
+import {
+  Backend_Developer,
+  Cyber_Security_Engineer,
+  Data_Scientist,
+  Frontend_Developer,
+  ML_Engineer,
+  Mobile_App_Developer,
+  UX_Designer,
+} from "@/assets";
 
 interface CareerPathDetails {
   id: number;
   name: string;
   description: string;
-  image: string;
+  image: StaticImageData;
   roadmapLink: string;
 }
 
@@ -22,7 +31,7 @@ const careerPathDetails: CareerPathDetails[] = [
     name: "Backend Developer",
     description:
       "Backend developers build and maintain the server-side of web applications. They create the APIs, implement business logic, and work with databases to ensure the application functions properly.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: Backend_Developer,
     roadmapLink: "https://roadmap.sh/backend",
   },
   {
@@ -30,7 +39,7 @@ const careerPathDetails: CareerPathDetails[] = [
     name: "Cyber Security Engineer",
     description:
       "Cyber Security Engineers protect systems and networks from digital threats. They implement security measures, monitor for vulnerabilities, and respond to security incidents to keep data safe.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: Cyber_Security_Engineer,
     roadmapLink: "https://roadmap.sh/cyber-security",
   },
   {
@@ -38,7 +47,7 @@ const careerPathDetails: CareerPathDetails[] = [
     name: "Data Scientist",
     description:
       "Data Scientists analyze and interpret complex data to help organizations make better decisions. They use statistical methods, machine learning, and data visualization to extract insights from data.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: Data_Scientist,
     roadmapLink: "https://roadmap.sh/data-science",
   },
   {
@@ -46,7 +55,7 @@ const careerPathDetails: CareerPathDetails[] = [
     name: "Frontend Developer",
     description:
       "Frontend developers create the user interfaces of websites and applications. They use HTML, CSS, and JavaScript to build responsive, interactive experiences that users can see and interact with.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: Frontend_Developer,
     roadmapLink: "https://roadmap.sh/frontend",
   },
   {
@@ -54,7 +63,7 @@ const careerPathDetails: CareerPathDetails[] = [
     name: "ML Engineer",
     description:
       "Machine Learning Engineers design and implement machine learning models to solve complex problems. They work on the intersection of data science and software engineering to deploy AI systems.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: ML_Engineer,
     roadmapLink: "https://roadmap.sh/ai-data-scientist",
   },
   {
@@ -62,7 +71,7 @@ const careerPathDetails: CareerPathDetails[] = [
     name: "Mobile App Developer",
     description:
       "Mobile App Developers create applications for smartphones and tablets. They work with platform-specific or cross-platform technologies to build apps that provide value to users on mobile devices.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: Mobile_App_Developer,
     roadmapLink: "https://roadmap.sh/android",
   },
   {
@@ -70,7 +79,7 @@ const careerPathDetails: CareerPathDetails[] = [
     name: "UI/UX Designer",
     description:
       "UI/UX Designers create user-centered designs for digital products. They focus on creating intuitive, accessible interfaces that provide a positive user experience while meeting business goals.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: UX_Designer,
     roadmapLink: "https://roadmap.sh/design-system",
   },
 ];
